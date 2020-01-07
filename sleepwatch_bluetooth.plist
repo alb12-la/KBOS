@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>killBluetooth on sleep</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/sbin/sleepwatcher</string>
+		<string>-V</string>
+		<string>-s ~/.sleepscripts/disable_bluetooth.sh</string>
+		<string>-w ~/.sleepscripts/enable_bluetooth.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+</dict>
+</plist>
