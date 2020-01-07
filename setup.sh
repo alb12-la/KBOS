@@ -34,11 +34,11 @@ echo "Preparing sleep scripts"
 echo "***********************" 
 
 # Copy sleepscripts to user directory
-mkdir -p ~/.sleepscripts
+mkdir -p ~/.sleepscripts || exit 1;
 cp ./disable_bluetooth.sh ~/.sleepscripts
 cp ./enable_bluetooth.sh ~/.sleepscripts
 chmod +x ~/.sleepscripts/** || exit 1;
-echo "** sleep scripts copied to `~/.sleepscripts`"
+echo "** sleep scripts copied to ~/.sleepscripts"
 
 # Copy plist to ~/Library/LaunchAgents
 cp ./sleepwatch_bluetooth.plist ~/Library/LaunchAgents
