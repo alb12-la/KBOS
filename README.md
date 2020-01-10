@@ -16,3 +16,7 @@ KBOS requires [Homebrew](https://brew.sh/) which is used to install the followin
 ## Future improvements
 - Attempt to connect to last connected device on wake. 
 - Improve script output and robustness
+
+
+## Report a bug
+If this script doesn't work for you, please let me know so I can improve it or feel free to send a pull request. 
