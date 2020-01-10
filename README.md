@@ -1,5 +1,5 @@
 # Kill Bluetooth On Sleep (KBOS)
-Tired of your bluetooth headphones pairing with a computer you thought was asleep ? This fixes that
+Tired of your bluetooth headphones pairing with a MacOs computer you thought was asleep ? This fixes that
 
 KBOS uses `sleepwatcher` and `Blueutil` to turn off bluetooth when your mac falls asleep, then turns it back on when the computer is woken up. 
 
