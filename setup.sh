@@ -1,10 +1,10 @@
 #!/bin/bash 
 
-
 SLEEP_SCRIPTS_DIR=~/.sleepscripts
 LAUNCH_AGENTS_PATH=~/Library/LaunchAgents/
 KBOS_PLIST_PATH=~/Library/LaunchAgents/sleepwatch_bluetooth.plist
 
+# Caputre arguments if any
 while test $# -gt 0; do
   case "$1" in
     -h|--help)
@@ -51,7 +51,6 @@ while test $# -gt 0; do
         fi
         echo "* To uninstall Blueutil and Sleepwatcher, please visit https://docs.brew.sh/FAQ#how-do-i-uninstall-a-formula"
         echo "KBOS has successfully been uninstalled 🙅🏽‍♂️"
-        
         ;;
     *)
       echo "${1} is an unknown argument." 
@@ -61,6 +60,7 @@ while test $# -gt 0; do
   exit 0;
 done
 
+# Install KBOS
 echo "***************************" 
 echo "Checking for prerequisites"
 echo "***************************"
