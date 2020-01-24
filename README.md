@@ -1,8 +1,9 @@
 # Kill Bluetooth On Sleep (KBOS)
-Tired of your bluetooth headphones pairing with a computer you thought was asleep ? This fixes that
+Tired of your bluetooth headphones pairing with a MacOs computer you thought was asleep ? This fixes that
 
+KBOS uses `sleepwatcher` and `Blueutil` to turn off bluetooth when your mac falls asleep, then turns it back on when the computer is woken up. 
 
-# Prerequisites
+## Prerequisites
 KBOS requires [Homebrew](https://brew.sh/) which is used to install the following packages:
  * [Blueutil](https://formulae.brew.sh/formula/blueutil#default)
  * [sleepwatcher](https://formulae.brew.sh/formula/sleepwatcher#default)
@@ -19,3 +20,11 @@ KBOS requires [Homebrew](https://brew.sh/) which is used to install the followin
 -u, --uninstall           removes the ~/sleepscripts directory and the KBOS Plist but does NOT uninstall brew, Blueutil, or sleepwatcher. I'll let you handle that on your own https://docs.brew.sh/FAQ#how-do-i-uninstall-a-formula.
 
 ```
+
+## Future improvements
+- Attempt to connect to last connected device on wake. 
+- Improve script output and robustness
+
+
+## Report a bug
+If this script doesn't work for you, please let me know so I can improve it or feel free to send a pull request. 
