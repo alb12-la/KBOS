@@ -10,3 +10,12 @@ KBOS requires [Homebrew](https://brew.sh/) which is used to install the followin
 ## Installation
  1. Install [Homebrew](https://brew.sh/) manually first. 
  2. run `bash setup.sh` from this directory.
+
+### Additional arguments
+```
+-h, --help                show brief help menu
+-d, --disable             disables KBOS, but doesn't uninstall anything.
+-e, --enable              re-enables KBOS from a disabled state
+-u, --uninstall           removes the ~/sleepscripts directory and the KBOS Plist but does NOT uninstall brew, Blueutil, or sleepwatcher. I'll let you handle that on your own https://docs.brew.sh/FAQ#how-do-i-uninstall-a-formula.
+
+```
