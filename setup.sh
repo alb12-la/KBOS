@@ -101,7 +101,8 @@ cp ./enable_bluetooth.sh ${SLEEP_SCRIPTS_DIR} || exit 1;
 chmod +x ${SLEEP_SCRIPTS_DIR}/* || exit 1;
 echo "** sleep scripts copied to ~/.sleepscripts"
 
-# Copy plist to ~/Library/LaunchAgents
+# Copy plist to ~/Library/LaunchAgents - after creating the directory if it doesn't exist 
+mkdir -p ${LAUNCH_AGENTS_PATH} || exit 1;
 cp ./sleepwatch_bluetooth.plist ${LAUNCH_AGENTS_PATH} || exit 1;
 echo "** sleepwatch_bluetooth.plist copied to  ${LAUNCH_AGENTS_PATH}"
 launchctl load ${KBOS_PLIST_PATH}
