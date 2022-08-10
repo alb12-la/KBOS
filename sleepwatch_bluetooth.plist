@@ -6,7 +6,7 @@
 	<string>killBluetooth on sleep</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/sbin/sleepwatcher</string>
+		<string>sleepwatcher</string>
 		<string>-V</string>
 		<string>-s ~/.sleepscripts/disable_bluetooth.sh</string>
 		<string>-w ~/.sleepscripts/enable_bluetooth.sh</string>
