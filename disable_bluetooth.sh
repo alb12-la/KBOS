@@ -1,4 +1,5 @@
 #!/bin/bash 
+
 blueutil --power 0
 
 # Uncomment to debug
