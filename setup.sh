@@ -94,6 +94,9 @@ echo "***********************"
 echo "Preparing sleep scripts"
 echo "***********************" 
 
+blueutil --paired | tr -d ',' | awk 'NR>0 { print $2 }' > PairedDevices.txt
+
+
 # Determine and escape absolute paths of sleepwatcher and Blueutil
 SLEEPWATCHER_PATH=$(which sleepwatcher | sed 's_/_\\/_g')
 BLUEUTIL_PATH=$(which blueutil | sed 's_/_\\/_g')
@@ -104,6 +107,8 @@ sed "s/blueutil/${BLUEUTIL_PATH}/" ./disable_bluetooth.sh > \
     ${SLEEP_SCRIPTS_DIR}/disable_bluetooth.sh || exit 1;
 sed "s/blueutil/${BLUEUTIL_PATH}/" ./enable_bluetooth.sh > \
     ${SLEEP_SCRIPTS_DIR}/enable_bluetooth.sh || exit 1;
+sed "s/blueutil/${BLUEUTIL_PATH}/" ./PairedDevices.txt > \
+    ${SLEEP_SCRIPTS_DIR}/PairedDevices.txt|| exit 1;
 chmod +x ${SLEEP_SCRIPTS_DIR}/* || exit 1;
 echo "** sleep scripts copied to ${SLEEP_SCRIPTS_DIR}"
 
