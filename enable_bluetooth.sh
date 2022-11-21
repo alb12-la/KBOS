@@ -3,8 +3,7 @@ SLEEP_SCRIPTS_DIR=~/.sleepscripts
 
 blueutil --power 1
 
-
-
+# Go through PairedDevices.txt and connect 
 while read device; do
     blueutil --connect  $device &
 done < ${SLEEP_SCRIPTS_DIR}/PairedDevices.txt
