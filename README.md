@@ -22,7 +22,7 @@ KBOS requires [Homebrew](https://brew.sh/) which is used to install the followin
 ```
 
 ## Future improvements
-- Attempt to connect to last connected device on wake. 
+- Skip turning on Bluetooth if it was previously off before sleep to avoid unintended activation
 - Improve script output and robustness
 
 
