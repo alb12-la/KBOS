@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-file=~/.sleepscripts/recent.txt
+file=~/.sleepscripts/.recent.txt
 status=$(blueutil --power)
 
 echo $status > $file

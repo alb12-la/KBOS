@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-file=~/.sleepscripts/recent.txt
+file=~/.sleepscripts/.recent.txt
 status=$(head -n 1 $file)
 
 if [ "$status" == "1" ]
